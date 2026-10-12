@@ -250,6 +250,7 @@ lightcraft --control 7980 ~/Pictures/trip
   claude mcp add lightcraft -- "$PWD/target/release/lightcraft-cli" mcp ~/Pictures/shoot          # headless
   claude mcp add lightcraft-app -- "$PWD/target/release/lightcraft-cli" mcp --connect 127.0.0.1:7980  # live app
   ```
+- **ComfyUI nodes:** [`integrations/comfyui/`](integrations/comfyui/README.md) wraps `lightcraft-cli` as LightCraft Develop, Masked Develop (relight inside a ComfyUI mask or a sky/subject/luminance/gradient/prompt mask), Preset and a run-any-command node.
 - **Scriptable CLI:** `lightcraft-cli run --import in.dng develop.set control=light.exposure value=0.7 app.export
   path=out.jpg longEdge=2048` runs any chain of commands (headless, on a saved library, or against the running app)
   and prints one JSON result per command; `lightcraft-cli render in.dng -o out.jpg --set light.exposure=0.7 --preset …`.

@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-lightcraft"
+description = "ComfyUI nodes that develop images with LightCraft (headless lightcraft-cli): global develop, masked relighting (sky, subject, luminance, gradients, your own mask), presets and any engine command."
+version = "0.1.0"
+license = { text = "MIT OR Apache-2.0" }
+dependencies = ["numpy", "Pillow"]
+
+[project.urls]
+Repository = "https://github.com/mirifiuto135-debug/ale_lightcraft"
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "LightCraft"
+Icon = ""
